@@ -12,7 +12,7 @@ Dependencies for this package include:
 
 #### Usecases
 
-ncbi_scraper: script used to find all salmonella accessions and load them onto a text file, must run in order to run genome_scraper
+ncbi_scraper: script used to find all salmonella accessions and load them onto a text file, must run in order to run genome_scraper, **This script is run in genome_scraper, no need to call it yourself**
 
 genome_scraper: script used to download all salmonella genomes, loads them into a directory inside Data/salmonella_genome_data, reads the script from ncbi_scraper
 

@@ -20,4 +20,6 @@ Looking to add AI functionality and expand our data set
 ### Requirments
 
 Inorder to use this package, you must have conda install on your device, instructions to install conda can be found here: https://docs.anaconda.com/anaconda/install/
+
+
 Once you have done that you also need to create an ncbi_dataset environment, which can be found here:https://www.ncbi.nlm.nih.gov/datasets/docs/v2/download-and-install/ (Please follow the conda install, ***If you do not follow them, this project will not work***) 

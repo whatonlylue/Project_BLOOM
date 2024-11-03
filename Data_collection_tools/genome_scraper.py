@@ -80,7 +80,7 @@ def download_data_and_unzip(accession: str, index: int, retires=3) -> str:
                     zip_ref.extract(f, path=temp_extract_path)
                     # Move and rename the extracted .fna file to the final target directory
                     extracted_file = os.path.join(temp_extract_path, f)
-                    target_path = f"../Data/salmonella_genome_data/{accession}_{os.path.basename(f)}"
+                    target_path = f"../Data/salmonella_genome_data/{accession}"
                     shutil.move(extracted_file, target_path)
 
         os.remove(filepath)

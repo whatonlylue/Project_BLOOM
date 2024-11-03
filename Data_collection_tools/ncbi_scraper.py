@@ -3,12 +3,17 @@ import shlex
 
 
 def run():
+    """
+    Creates a call to ncbi_datasets for all genome accesions and serovars of 'Salmonella' 
+    writes/creates a file called salmonella_data.txt: index,accesion,serovar.
+
+    """
+    #TODO: make this process dynamic, not just Salmonella
     data_call = "datasets summary genome taxon 'Salmonella' --assembly-level complete --as-json-lines"
     format_call = "dataformat tsv genome --fields accession,assminfo-biosample-serovar"
 
     data_call = shlex.split(data_call)
     format_call = shlex.split(format_call)
-
 
     data_process = subprocess.Popen(data_call, stdout=subprocess.PIPE)
     format_process = subprocess.run(format_call, stdin=data_process.stdout, capture_output=True,text=True)
@@ -58,4 +63,7 @@ def run():
 
 
 
+
+if __name__ == '__main__':
+    run()
 

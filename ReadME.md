@@ -3,14 +3,16 @@
 Welcome to Project BLOOM, which stands for: BLOOM: Behavioral Learning and Outcome Observation in Microbes. This project aims to fit a machine learning model to adapt to bacteria genomes to eventually predict there properties, with an end goal of dynamic vaccine creation.
 
 ### Requirments and Install
-Inorder to use this package, you must have conda install on your device, instructions to install conda can be found [here](https://docs.anaconda.com/anaconda/install/) Once you install conda, run:
+In order to use this package, you must have conda installed on your device, instructions to install conda can be found [here](https://docs.anaconda.com/anaconda/install/) 
+
+Once you install conda, please run:
 ```shell
 conda init
 conda create -n ncbi_datasets
 conda activate ncbi_datasets
 conda install -c conda-forge ncbi-datasets-cli 
 ```
-These instructions can be found [here](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/download-and-install/)
+These instructions are from the ncbi_datasets module and can be found [here](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/download-and-install/)
 
 #### Dependencies
 - shelx

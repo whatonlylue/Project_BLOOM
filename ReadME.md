@@ -1,5 +1,7 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/38ccf23a-e86d-4198-a066-f6f2f83f1a16" height="350" width="900" />
+</p>
 
-![BLOOM (2)](https://github.com/user-attachments/assets/38ccf23a-e86d-4198-a066-f6f2f83f1a16)
 
 # Project BLOOM
 

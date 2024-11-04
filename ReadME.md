@@ -1,3 +1,6 @@
+
+![BLOOM (2)](https://github.com/user-attachments/assets/38ccf23a-e86d-4198-a066-f6f2f83f1a16)
+
 # Project BLOOM
 
 Welcome to Project BLOOM, which stands for: BLOOM: Behavioral Learning and Outcome Observation in Microbes. This project aims to fit a machine learning model to adapt to bacteria genomes to eventually predict there properties, with an end goal of dynamic vaccine creation.

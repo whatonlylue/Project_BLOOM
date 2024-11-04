@@ -1,10 +1,30 @@
 import torch
-gnome="ATATGA"
+from Bio import SeqIO
+
+
+import time
+
+records = list(SeqIO.parse("../Data/salmonella_genome_data/GCA_000006945.2/ncbi_dataset/data/GCA_000006945.2/GCA_000006945.2_ASM694v2_genomic.fna", "fasta"))
+
+genome = records[0].seq
+    
 dic={"A":0.,"T":1.,"C":2.,"G":3.}
-g1_tensor=torch.tensor([dic[gnome[0]],dic[gnome[1]],dic[gnome[2]]])
-a=3
-while a!=len(gnome):
-    g2_tensor=torch.tensor([dic[gnome[a]],dic[gnome[a+1]],dic[gnome[a+2]]])
-    g1_tensor=torch.cat((g1_tensor,g2_tensor))
-    a+=3
-print(g1_tensor)
+
+
+
+start = time.time()
+
+#for i in range(len(genome)-3):
+
+x = torch.tensor([[0,0,0],[1,1,1]],device='mps')
+x_cat = torch.cat((x,x,x), 0)
+
+print(x_cat.device)
+
+#print(f"Time Elapsed: {(time.time()-start).2f}")
+
+
+print(torch.backends.mps.is_available())
+
+
+

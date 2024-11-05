@@ -47,7 +47,7 @@ class SpectralClustering:
         #Compute similarity matrix
         W = self.compute_similarity_matrix(X) 
 
-        #Compute the onrmalize Laplacian
+        #Compute the normalized Laplacian
         D = torch.diag(W.sum(dim=1))
         L = D - W #Unnormalized Laplacian
         D_inv_sqrt = torch.diag(1.0 / torch.sqrt(D.diag()))

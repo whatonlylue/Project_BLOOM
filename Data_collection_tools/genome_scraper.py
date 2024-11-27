@@ -129,8 +129,10 @@ def main():
     if not os.path.exists("../Data/salmonella_data.txt"):
         print("Salmonella_data.txt, not found, building file")
         run()
-
+    if not os.path.exists("../Data/salmonella_genome_data"):
+        os.mkdir("../Data/salmonella_genome_data")
     accession_list = accesion_list_maker()
+    
 
     parallelized_downloads(accession_list, time.time())
     

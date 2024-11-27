@@ -76,7 +76,3 @@ if __name__ == '__main__':
     logging.set_verbosity_error() 
     warnings.simplefilter('ignore',UserWarning)
     main()
-    
-
-
-
